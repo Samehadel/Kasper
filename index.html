@@ -26,11 +26,11 @@
                     <i class="fas fa-bars toggle-menu"></i>
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="form">
                         <i class="fas fa-search"></i>
@@ -41,7 +41,7 @@
     <!-- Header Section End -->
 
     <!-- Landing Section Start -->
-    <div class="landing">
+    <div class="landing" id="landing">
         <div class="overlay"></div>
         <div class="text center-y">
             <div class="content">
@@ -60,9 +60,10 @@
         </div>
     </div>
     <!-- Landing Section End -->
-
+    
     <!-- Services Section Start -->
-    <div class="section">
+    <div id="services"></div>
+    <div >
         <div class="container">
             <div class="main-heading">
                 <h2>SERVICES</h2>
@@ -127,7 +128,7 @@
     <!-- Design Section End -->
 
     <!-- Portfolio Section Start -->
-
+    <div id="portfolio"></div>
     <div class="portfolio">
             <div class="container">
                 <div class="main-heading">
@@ -206,5 +207,31 @@
         </div>
         
     <!-- Portfolio Section End -->
+
+    <!-- Video Section Start -->
+    <div class="video">
+        <video autoplay muted loop>
+            <source src="./images/awesome-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-text center-y">
+            <h2>SUPER AWESOME VIDEO HERE</h2>    
+            <p>Its All You Need</p>
+            <button class="see-more">See More</button>
+        </div>
+    </div>
+    <!-- Video Section End -->
+
+
+    <!-- About Section Start -->
+    <div id="about"></div>
+    <div class="about">
+        <div class="container">
+            <div class="main-heading">
+                <h2>About</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
 </body>
 </html>
