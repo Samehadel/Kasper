@@ -814,3 +814,132 @@ header .container {
 }
 
 /* Skills Section End */
+
+/* Quote Section Start */
+.quote {
+  position: relative;
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 80%);
+}
+
+.quote .container {
+  /* padding: 50px; */
+}
+
+.quote .container h1,
+.quote .container p {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+/* Quote Section End */
+
+/* Pricing Section Start */
+
+.pricing .container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.pricing .container .price {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .pricing .container .price {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing .container .price {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing .container .price {
+    flex-basis: 25%;
+  }
+}
+
+.pricing .container .price-text {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  border-bottom: var(--main-color) solid 1px;
+}
+
+.pricing .container .price-text p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.pricing .container .price-text h1 {
+  font-size: 60px;
+  position: relative;
+}
+
+.pricing .container .price-text h1::before {
+  content: '$';
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+  font-weight: normal;
+}
+
+.pricing .container .price-text h1::after {
+  content: '/Mo';
+  font-size: 25px;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% + 50px);
+  font-weight: normal;
+}
+
+.pricing .container .features {
+  border-bottom: 1px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+.pricing .features ul {
+  width: 70%;
+}
+
+.pricing .container .features li {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .container .features li:last-child {
+  border-bottom: none;
+}
+
+.pricing .price button {
+  width: 50%;
+  border: 1px solid var(--main-color);
+  height: 55px;
+  background-color: white;
+  color: #551a8b;
+  margin: 20px 0;
+  align-self: center;
+}
+/* Pricing Section End */
